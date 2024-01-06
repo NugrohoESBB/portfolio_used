@@ -1,19 +1,3 @@
-/* Age */
-var today = new Date();
-var birthday = new Date(2002, 6, 29);
-var year = 0;
-if (today.getMonth() < birthday.getMonth()) {
-  year = 1;
-} else if ((today.getMonth() == birthday.getMonth()) && today.getDate() < birthday.getDate()) {
-  year = 1;
-}
-var age = today.getFullYear() - birthday.getFullYear() - year;
-
-if(age < 0){
-  age = 0;
-}
-document.getElementById('myAge').innerHTML = age;
-
 /* Main JS */
 (function() {
   "use strict";
